@@ -29,12 +29,13 @@ What's new
 
   * New models supported on CPUs & GPUs: GPT-OSS-20B, MiniCPM-V-4_5-8B, MiniCPM-o-2.6, and Qwen3-30B-A3B.
   * New models supported on NPUs: MiniCPM-o-2.6. In addition, NPU support is now available on Qwen2.5-1B-Instruct, Qwen3-Embedding-0.6B, Qwen-2.5-coder-0.5B.
+  * Preview: OpenVINO™ GenAI adds support for video generation pipeline based on LTX-Video model on CPU and GPUs.
   * OpenVINO™ GenAI now adds word-level timestamp functionality to the Whisper Pipeline on CPUs, GPUs, and NPUs, enabling more accurate transcriptions and subtitling in line with OpenAI and FasterWhisper implementations.
   * Phi-3-mini FastDraft model is now available on Hugging Face to accelerate LLM inference on NPUs. FastDraft optimizes speculative decoding for LLMs.
 
-
 * Broader LLM model support and more model compression techniques
 
+  * OpenVINO™ GenAI and OpenVINO™ Model Server introduces EAGLE-3 speculative decoding to accelerate LLM inference using smarter token prediction on Intel CPUs and GPUs. Validated on Qwen3-8B model.
   * With the new int4 data-aware weight compression for 3D MatMuls, the Neural Network Compression Framework enables MoE LLMs to run with reduced memory, bandwidth, and improved accuracy compared to data-free schemes-delivering faster, more efficient deployment on resource-constrained devices.
   * Preview: the Neural Network Compression Framework now supports per-layer and per-group Look-Up Tables (LUT) for FP8-4BLUT quantization. This enables fine-grained, codebook-based compression that reduces model size and bandwidth while improving inference speed and accuracy for LLMs and transformer workloads.
 
